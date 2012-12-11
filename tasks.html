@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="bootstrap.css" />
+        <style>
+            HTML, BODY {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                background-color:#E6E6E6;
+            }
+
+            .nav {
+                background: -webkit-linear-gradient(top, #091C58, #2F5490 5%, #0F2967 25%, #091C58 40%);
+                padding: 8px;
+                height: 26px;
+                max-height: 26px;
+            }
+
+            .taskType {
+                margin: 10px auto;
+                width: 95%;
+                font-weight: bold;
+            }
+            .rvmf {
+                color: #FE7D19;
+            }
+
+            .faux-table {
+                margin: 0 auto;
+                clear: both;
+                width: 95%;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);  
+                background-color: #fff;
+            }
+            .headerRow {
+                display: none;
+            }
+
+            DL {
+                overflow: hidden;
+                margin: 0 auto;
+                border-bottom: 1px solid #ddd;  
+            }
+            DL:nth-of-type(odd), DL:nth-of-type(odd) { 
+                background: #eee; 
+            }
+
+            DT, DD {
+                margin: 0;
+                float: left;
+                padding: 6px;
+            }
+            DT { width: 20%; }
+            DD { width: 75%; }
+
+
+            @media (min-width: 600px) {
+                .faux-table {
+                    display:table;
+                    position:relative;
+                }
+
+                DL {
+                    background-color: #fff;
+                }
+
+                DT, DD {
+                    padding: 6px;
+                    width: auto;
+                    float: none;
+                    background-color: #fff;
+                }
+                DD {
+                    border-bottom: 1px solid #ddd;
+                }
+
+                DT, DL.headerRow DD {
+                    display:none;
+                }
+                DL, DL.headerRow {
+                    display:table-row;
+                }
+                DL.headerRow DT, DD {
+                    display:table-cell;
+                }
+                DL.headerRow DT {
+                    color: #666;
+                    background-color: #ccc;
+                }
+            }
+        </style>
+        <script src="jquery.js" type="text/javascript"></script>
+        <script src="jquery.fastclick.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="nav"></div>
+        <div class="card">
+            <div class="taskType">Unread To <span class="rvmf">(3)</span></div>
+            <div class="faux-table">
+                <dl class="headerRow">
+                    <dt>Mail Number</dt>
+                    <dt>Subject</dt>
+                    <dt>Organization</dt>
+                    <dt>Sent Date</dt>
+                </dl>
+                <dl>
+                    <dt>Mail Number</dt>
+                        <dd>RAN-CAN-000013</dd>
+                    <dt>Subject</dt>
+                        <dd>Fwd: d3</dd>
+                    <dt>Organization</dt>
+                        <dd>Rand Resources</dd>
+                    <dt>Sent Date</dt>
+                        <dd>22/03/12</dd>
+                </dl>
+                <dl>
+                    <dt>Mail Number</dt>
+                        <dd>RAN-CAN-000008</dd>
+                    <dt>Subject</dt>
+                        <dd>Fwd: test forward requiring response</dd>
+                    <dt>Organization</dt>
+                        <dd>Rand Resources</dd>
+                    <dt>Sent Date</dt>
+                        <dd>1/03/12</dd>
+                </dl>
+                <dl>
+                    <dt>Mail Number</dt>
+                        <dd>RAN-CAN-000007</dd>
+                    <dt>Subject</dt>
+                        <dd>Fwd: test forward requiring reply</dd>
+                    <dt>Organization</dt>
+                        <dd>Splice Architecture</dd>
+                    <dt>Sent Date</dt>
+                        <dd>28/02/12</dd>
+                </dl>
+            </div>
+        </div>
+    </body>
+</html>​
